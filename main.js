@@ -55,6 +55,11 @@ for (var ix = 0; ix < videos.length; ix++) {
 			this.muted = true;
 
 		}
-//this.muted = true;
+
+		// if (this.muted || this.paused == true ) {
+		// 	this.play();}
+		
+		
+
 	});
 }
