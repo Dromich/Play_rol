@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.6;
+    font-family: "RobotoRegular", sans-serif;
+    overflow-x: hidden;
+}
+
+div {
+    padding-top: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+}
+
+video {
+    width: 320px;
+    padding: 0;
+    margin-top: 20px;
+    display: block;
+}
+
+article {
+    padding-bottom: 130px;
+    padding-top: 0px;
+    width: 320px;
+    height: 300px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 25%;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+p {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-top: 50px;
+    padding: 10px;
+}
