@@ -48,11 +48,11 @@ window.addEventListener('resize', checkScroll, false);
 for (var ix = 0; ix < videos.length; ix++) {
 	videos[ix].addEventListener('click', function () {
 
-		if (this.paused == true) {
-			this.play();
+		if (this.muted) {
+			this.muted = false;
 
 		} else {
-			this.pause();
+			this.muted = true;
 
 		}
 //this.muted = true;
