@@ -18,12 +18,12 @@ div {
 video {
     width: 320px;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 5px;
     display: block;
 }
 
 article {
-    padding-bottom: 130px;
+    
     padding-top: 0px;
     width: 320px;
     
@@ -34,8 +34,7 @@ article {
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    padding: 10px;
-    margin: 15px auto;
+   
 }
 
 p {

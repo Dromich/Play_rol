@@ -1,19 +1,22 @@
 
-var videos = document.getElementsByTagName("video"),
+var article = document.getElementsByTagName("article"),
+videos = document.getElementsByTagName("video"),
 
-	fraction = 0.49
+	fraction = 0.9
 function checkScroll() {
 
-	for (var i = 0; i < videos.length; i++) {
+	for (var i = 0; i < article.length; i++) {
 
+		
 
+let art = article[i];
 
 		var video = videos[i];
 
-		var x = video.offsetLeft,
-			y = video.offsetTop,
-			w = video.offsetWidth,
-			h = video.offsetHeight,
+		var x = art.offsetLeft,
+			y = art.offsetTop,
+			w = art.offsetWidth,
+			h = art.offsetHeight,
 			r = x + w,  //right       
 			b = y + h, //bottom
 			visibleX,
@@ -23,19 +26,21 @@ function checkScroll() {
 		visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
 		visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
-		visible = visibleX * visibleY / (w * h);
+		visible = visibleX * visibleY / (w * h) ;
+
+		
 
 		if (visible > fraction) {
 			video.play();
 		} else {
 			video.pause();
 		}
-		console.log(videos[i].id + " значення " + visible)
+		//console.log(videos[i].id +" VISIB " + visible )
 	}
 
 }
 
-console.log(videos);
+
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
 
@@ -50,6 +55,6 @@ for (var ix = 0; ix < videos.length; ix++) {
 			this.pause();
 
 		}
-
+//this.muted = true;
 	});
 }
