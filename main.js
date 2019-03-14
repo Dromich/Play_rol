@@ -2,7 +2,8 @@
 var article = document.getElementsByTagName("article"),
 videos = document.getElementsByTagName("video"),
 
-	fraction = 0.9
+	fraction = 0.9 //коофіцієнт при якому відео буде вмикатись
+
 function checkScroll() {
 
 	for (var i = 0; i < article.length; i++) {
