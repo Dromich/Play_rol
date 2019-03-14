@@ -1,5 +1,6 @@
 
 var videos = document.getElementsByTagName("video"),
+
 fraction = 0.49
 function checkScroll() {
 
@@ -37,9 +38,18 @@ console.log(videos[i].id+ " значення "+ visible)
 console.log(videos);
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
+
+
 for(var ix = 0; ix < videos.length; ix++) {
 videos[ix].addEventListener('click',function(){
-this.play();
-this.mute();
+
+	if (this.paused == true) {
+		this.play();
+		
+	  } else {
+		  this.pause();
+	   
+	  }
+
 });
 }
