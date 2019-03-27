@@ -17,5 +17,6 @@
 	</div>
 	
 	<script src="{THEME}/main.js"></script>
+	<script src="{THEME}/ajax.js"></script>
 </body>
 </html>
