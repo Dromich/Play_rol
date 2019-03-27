@@ -5,6 +5,7 @@ videos = document.getElementsByTagName("video"),
 	fraction = 0.9 //коофіцієнт при якому відео буде вмикатись
 
 function checkScroll() {
+	
 
 	for (var i = 0; i < article.length; i++) {
 
@@ -31,11 +32,14 @@ let art = article[i];
 
 		
 
-		if (visible > fraction) {
+		if (visible >fraction) {
 			video.play();
+		//alert('PLAY')
 		} else {
+			//alert('PAUSE')
 			video.pause();
 		}
+		//alert(visible+'fraccc'+ fraction)
 		//console.log(videos[i].id +" VISIB " + visible )
 	}
 
