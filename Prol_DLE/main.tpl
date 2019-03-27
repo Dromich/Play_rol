@@ -16,6 +16,6 @@
 			{content}
 	</div>
 	
-
+	<script src="{THEME}/main.js"></script>
 </body>
 </html>
